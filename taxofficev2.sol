@@ -555,7 +555,7 @@ interface IERC20 {
 contract TaxOfficeV2 is Operator {
     using SafeMath for uint256;
 
-    address public nava = address(0x17afe4352D3277f9C7f2E2f3b689d9398CbE0f60);
+    address public nava = address(0x46D741b89102815710efeA3051291E64Ff49C228);
     address public wftm = address(0x2545AF3D8b11e295bB7aEdD5826021AB54F71630);
     address public uniRouter = address(0x1EEF778fC06C427ded93560aF37EfDc534C9c854);
 
