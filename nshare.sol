@@ -721,8 +721,8 @@ contract NShare is ERC20Burnable, Operator {
         communityFundRewardRate = COMMUNITY_FUND_POOL_ALLOCATION.div(VESTING_DURATION);
         devFundRewardRate = DEV_FUND_POOL_ALLOCATION.div(VESTING_DURATION);
 
-        devFund = address(0xdD1C1f8f57f7cA6bf3Bd8eE7Ea1A839277BbfcEA);
-        communityFund = address(0x851876aDB482126f295ee9812eF9Dd1419A816b9);
+        devFund = address(0xEC251BB4919570814d6ee191E59A7DB408784EEA);
+        communityFund = address(0xeB092ae273a14561C60c2168362A60d1A8762473);
     }
 
     function setTreasuryFund(address _communityFund) external {
