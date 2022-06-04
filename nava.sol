@@ -864,11 +864,11 @@ contract Nava is ERC20Burnable, Operator {
     using SafeMath for uint256;
 
     // Initial distribution for the first 24h genesis pools
-    uint256 public constant INITIAL_GENESIS_POOL_DISTRIBUTION = 100000 ether;
+    uint256 public constant INITIAL_GENESIS_POOL_DISTRIBUTION = 400000 ether;
     // Initial distribution for the day 2-5 NAVA-WFTM LP -> NAVA pool
     // uint256 public constant INITIAL_NAVA_POOL_DISTRIBUTION = 123990 ether;
     // Distribution for airdrops wallet
-    uint256 public constant INITIAL_AIRDROP_WALLET_DISTRIBUTION = 100000 ether;
+    uint256 public constant INITIAL_AIRDROP_WALLET_DISTRIBUTION = 600000 ether;
 
     // Have the rewards been distributed to the pools
     bool public rewardPoolDistributed = false;
@@ -890,7 +890,7 @@ contract Nava is ERC20Burnable, Operator {
     bool public autoCalculateTax;
 
     // Tax Tiers
-    uint256[] public taxTiersTwaps = [0, 9e17, 1e18, 1.10e18, 1.20e18];
+    uint256[] public taxTiersTwaps = [0, 7e17, 8e17, 9e17, 1e18];
     uint256[] public taxTiersRates = [980, 700, 500, 300, 0];
 
     // Sender addresses excluded from Tax
