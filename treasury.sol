@@ -781,7 +781,7 @@ contract Treasury is ContractGuard {
 
     /* ========= CONSTANT VARIABLES ======== */
 
-    uint256 public constant PERIOD = 1 minutes;
+    uint256 public constant PERIOD = 6 hours;
 
     /* ========== STATE VARIABLES ========== */
 
@@ -798,9 +798,9 @@ contract Treasury is ContractGuard {
 
     // exclusions from total supply
     address[] public excludedFromTotalSupply = [
-        address(0xa14378586A27A95B65de28e12D2D7ae6144a4E49)// NavaGenesisPool
-        // address(0xA2EEf208FADf123D75a8d8f0AF453D4D548849DE)// new NavaRewardPool
-        // address(0xdeEAd7331DfF75c9cd290C569F6B70Fc75D1fC58) // old NavaRewardPool
+        address(0xb9F9993f0D4A63344D9571387E18f659B6AE5447)// NavaGenesisPool
+        // address(0xb9F9993f0D4A63344D9571387E18f659B6AE5447)// new NavaRewardPool
+        // address(0xb9F9993f0D4A63344D9571387E18f659B6AE5447) // old NavaRewardPool
     ];
 
     // core components
@@ -1023,8 +1023,8 @@ contract Treasury is ContractGuard {
         premiumThreshold = 110;
         premiumPercent = 7000;
 
-        // First 28 epochs with 4.5% expansion
-        bootstrapEpochs = 0;
+        // First 28 epochs with 3% expansion
+        bootstrapEpochs = 28;
         bootstrapSupplyExpansionPercent = 300;
 
         // set seigniorageSaved to it's balance
