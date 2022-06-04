@@ -563,15 +563,15 @@ contract NavaGenesisRewardPool {
     uint256 public poolEndTime;
 
     // // // TESTNET
-    // uint256 public navaPerSecond = 3.0555555 ether; // 11000 NAVA / (1h * 60min * 60s)
-    // uint256 public runningTime = 1 hours; // 1 hours
-    // uint256 public constant TOTAL_REWARDS = 25000 ether;
+    // uint256 public navaPerSecond = 0.66137566 ether; // 400000 NAVA / (7 d *24 h * 60min * 60s)
+    // uint256 public runningTime = 7 days; // 7 days
+    // uint256 public constant TOTAL_REWARDS = 400000 ether;
     // // END TESTNET
 
     // MAINNET
-    uint256 public navaPerSecond = 1.15740740 ether; // 100000 NAVA / (1 d *24 h * 60min * 60s)
-    uint256 public runningTime = 1 days; // 1 days
-    uint256 public constant TOTAL_REWARDS = 100000 ether;
+    uint256 public navaPerSecond = 0.66137566 ether; // 400000 NAVA / (7 d *24 h * 60min * 60s)
+    uint256 public runningTime = 7 days; // 7 days
+    uint256 public constant TOTAL_REWARDS = 400000 ether;
     // END MAINNET
 
     event Deposit(address indexed user, uint256 indexed pid, uint256 amount);
